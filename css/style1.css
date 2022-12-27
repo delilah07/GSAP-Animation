@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&family=Poppins:wght@200;300;500;700&display=swap");
+.next {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 2;
+}
+.next:hover {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: poppins;
+}
+.line {
+  position: fixed;
+
+  height: 100vh;
+}
+.line-one {
+  width: 15px;
+  background-color: #ff3131;
+  left: 23%;
+}
+.line-two {
+  width: 25px;
+  background-color: #183d79;
+  left: 25%;
+}
+nav {
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 270px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+nav ul li a {
+  color: #000;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav ul li a:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ff3131;
+  transition: width 0.4s;
+}
+nav ul li:hover a:after {
+  width: 100%;
+}
+.logo {
+  position: fixed;
+  left: 120px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.search {
+  position: fixed;
+  right: 160px;
+}
+.menu {
+  position: fixed;
+  right: 100px;
+}
+.img img {
+  position: relative;
+  height: 80vh;
+  width: inherit;
+  left: 9.5%;
+  top: 0;
+}
+.title {
+  position: fixed;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 43%;
+  line-height: 0.9;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -6px;
+}
+.title p {
+  font-size: 25px;
+  font-weight: 300;
+  color: grey;
+  text-transform: uppercase;
+  left: 150px;
+  letter-spacing: 10px;
+}
+.btn a {
+  position: relative;
+  bottom: 30vh;
+  right: -57%;
+  background-color: #ff3131;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+.btn a:hover {
+  background: #000;
+}
+.year {
+  font-weight: 700;
+  position: fixed;
+  top: 75vh;
+  left: 110px;
+  padding: 10px 30px;
+}
+.media ul {
+  list-style: none;
+  position: fixed;
+  right: 20px;
+  top: 63%;
+  padding: 10px;
+}
+.media ul li {
+  font-size: 18px;
+  margin: 24px 0;
+  transition: 0.3s;
+}
+.media ul li a {
+  color: #000;
+}
+.media ul li:hover {
+  transform: scale(1.9);
+}
