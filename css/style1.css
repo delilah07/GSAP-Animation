@@ -125,7 +125,7 @@ nav ul li:hover a:after {
 }
 .btn a {
   position: relative;
-  bottom: 30vh;
+  bottom: 28vh;
   right: -57%;
   background-color: #ff3131;
   color: #fff;
