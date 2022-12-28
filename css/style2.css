@@ -59,11 +59,15 @@ nav {
   width: 40%;
   height: 10%;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 .nav-closed {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-height: 10vh;
   height: 100%;
   width: 100%;
 }
@@ -75,16 +79,20 @@ nav {
 }
 .nav-closed ul li {
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .nav-closed ul a {
   color: inherit;
   text-decoration: none;
 }
+.nav-closed ul li:hover {
+  color: rgb(94, 41, 16);
+}
 .nav-open {
   position: absolute;
   width: 40%;
   height: 90%;
-  top: 20%;
+  top: 10%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -112,6 +120,11 @@ nav {
 .clothing ul li a {
   text-decoration: none;
   color: rgb(160, 82, 45);
+  transition: all 0.3s ease-in-out;
+}
+.clothing ul li:hover a {
+  text-decoration: underline;
+  color: rgb(94, 41, 16);
 }
 .nav-images {
   width: 100%;
